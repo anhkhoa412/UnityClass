@@ -196,7 +196,7 @@ MonoBehaviour:
   player: {fileID: 62695062}
   controller: {fileID: 62695063}
   speed: 5
-  rotationSpeed: 10
+  rotationSpeed: 5
   anm: {fileID: 62695067}
 --- !u!65 &62695065
 BoxCollider:
@@ -536,7 +536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.16330038, y: -0, z: -0, w: 0.9865764}
-  m_LocalPosition: {x: 0, y: 2.309, z: 0.439}
+  m_LocalPosition: {x: 0, y: 1.58, z: -0.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -556,8 +556,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 62695068}
-  smoothTransit: 5
-  lookAttarget: 0
+  offset: {x: 0, y: 0, z: 0}
+  smoothRotation: 5
+  lookAtTarget: 1
 --- !u!1 &1509164828
 GameObject:
   m_ObjectHideFlags: 0
