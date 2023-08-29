@@ -24,6 +24,7 @@ public class CameraFollow : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(targetRotation);
 
         Vector3 newPosition = target.position + rotation * offset;
+
         transform.position = Vector3.Lerp(transform.position, newPosition, smoothRotation * Time.deltaTime);
 
         if (lookAtTarget)
