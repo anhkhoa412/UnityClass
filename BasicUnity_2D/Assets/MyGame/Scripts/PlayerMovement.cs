@@ -51,8 +51,20 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("isGrounded", false);
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if (state == MovementState.running)
+            {
+                anim.SetTrigger("isSlide");
+            }
 
-     
+        }
+
+        if (Input.GetMouseButton(0))
+        {
+            anim.SetTrigger("isAtk");
+        }
+
 
     }
 
@@ -90,20 +102,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         anim.SetInteger("state", (int)state);
-
-        if (Input.GetMouseButton(1))
-        {
-            if (state == MovementState.running)
-            {
-                anim.SetTrigger("isSlide");
-            }
-           
-        }
-
-        if (Input.GetMouseButton(0))
-        {
-                anim.SetTrigger("isAtk");
-        }
     }
    
 
